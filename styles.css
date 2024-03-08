@@ -1,0 +1,91 @@
+/* styles */
+
+@font-face {
+    font-family: "Inter";
+    src: url(./../fonts/Inter-VariableFont_slnt\,wght.ttf); 
+}
+
+:root {
+    --color-primary: hsl(0, 4%, 14%);
+    --color-secondary: hsl(0, 0%, 12%);
+    --color-terciary: hsl(0, 0%, 20%);
+    --color-text-principal: hsl(0, 0%, 100%);
+    --color-text-secondary: hsl(75, 94%, 57%);
+}
+
+/* layout */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1 {font-size: 20px; font-weight:bold;}
+h2 {font-size: 14px; color: var(--color-text-secondary);}
+h3 {font-size: 14px;}
+p {font-size: 14px;}
+
+html, body {
+    block-size: 100%;
+    font-family: "Inter";
+  }
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text-principal);
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--color-secondary);
+    inline-size: 320px;
+    display: grid;
+    place-items: center; 
+    border-radius: 15px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.header {
+    display: grid;
+    place-items: center; 
+    margin: 20px;
+}
+
+.links {
+    display: grid;
+    place-items: center; 
+}
+
+.img {
+    width: 50%;
+    border-radius: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    background-color: var(--color-terciary);
+    color: var(--color-text-principal);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: var(--color-text-secondary);
+    color: var(--color-secondary);
+    transition: background-color 0.5s;
+}
